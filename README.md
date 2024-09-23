@@ -10,7 +10,17 @@ Authors: Dhanuj Gandikota
 
 Runs on Raspberry Pi 5 with Raspberry OS Lite
 
-This dockerfile was initially created to demo the Birdnet capabilities of an audio sensor. This will run birdnet in the background (with an assumption it is running for Austin, Texas), and will also bring up a png for each new bird that is identified within the ledger. Only the latest five recordings are kept and audio files are deleted after they are converted into ledger information. All the hyperparameters are adjustable within the main.py.
+This dockerfile was initially created to demo the Birdnet capabilities of an audio sensor. This will run birdnet in the background (with an assumption it is running for Austin, Texas), and will also bring up a png for each new bird that is identified within the ledger. 
+
+Designed to run continously in background.
+
+Upon initial run will
+1. Ask if you want to overwrite previous run results (good for demos)
+2. Ask which connected Audio device you want to use for the microphone
+
+Only the latest five recordings are kept and audio files are deleted after they are converted into ledger information csv. 
+
+All the hyperparameters are adjustable within the main.py.
 
 #### Run and Build the Docker
 
