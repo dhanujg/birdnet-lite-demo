@@ -25,7 +25,21 @@ All the hyperparameters are adjustable within the main.py.
 #### Run and Build the Docker
 
 Go to the code folder
+```
+docker build -t birdnet_pi .
+```
+```
+docker run --rm -it     --device /dev/snd     --group-add audio     -v /home/dgandikota/output_test:/home/dgandikota/output_test     birdnet_pi
+```
 
-1. docker build -t birdnet_pi .
 
-2. docker run --rm -it     --device /dev/snd     --group-add audio     -v /home/dgandikota/output_test:/home/dgandikota/output_test     birdnet_pi
+### Other Instructions
+
+1. Enter Raspberry Pi Config to set the wifi system up.
+```
+sudo raspi-config
+```
+2. Check which SSID the raspberry pi is connected to
+```
+iwgetid
+```
