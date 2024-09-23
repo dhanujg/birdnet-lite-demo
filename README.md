@@ -35,13 +35,14 @@ docker run --rm -it     --device /dev/snd     --group-add audio     -v /home/dga
 
 ### Other Instructions
 
-1. Enter Raspberry Pi Config to set the wifi system up.
-```
-sudo raspi-config
-```
-2. Check which port the raspberry pi is registered on
+
+1. Check which port the raspberry pi is registered on
 ```
 arp -a | grep raspberry
+```
+2. Enter Raspberry Pi Config to set the wifi system up.
+```
+sudo raspi-config
 ```
 3. ssh into raspberry at that port
 4. Double Check which SSID the raspberry pi is connected to
