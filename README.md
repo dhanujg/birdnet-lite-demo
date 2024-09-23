@@ -39,7 +39,12 @@ docker run --rm -it     --device /dev/snd     --group-add audio     -v /home/dga
 ```
 sudo raspi-config
 ```
-2. Check which SSID the raspberry pi is connected to
+2. Check which port the raspberry pi is registered on
+```
+arp -a | grep raspberry
+```
+3. ssh into raspberry at that port
+4. Double Check which SSID the raspberry pi is connected to
 ```
 iwgetid
 ```
