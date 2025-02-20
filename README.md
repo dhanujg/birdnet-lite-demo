@@ -29,7 +29,7 @@ Go to the code folder
 docker build -t birdnet_pi .
 ```
 ```
-docker run --rm -it     --device /dev/snd     --group-add audio     -v /home/dgandikota/output_test:/home/dgandikota/output_test     birdnet_pi
+docker run --rm -it     --device /dev/snd     --group-add audio     -v /home/keittlab/Documents/birdnet-lite-demo/output_test:/home/keittlab/Documents/birdnet-lite-demo/output_test     birdnet_pi
 ```
 
 

@@ -14,15 +14,16 @@ import requests
 import urllib.parse
 
 # Constants
-OUTPUT_FOLDER = '/home/dgandikota/output_test'
+OUTPUT_FOLDER = '/home/keittlab/Documents/birdnet-lite-demo/output_test'
 LEDGER_FILE = os.path.join(OUTPUT_FOLDER, 'ledger.csv')
 LAT = 30.2672  # Austin, Texas latitude
 LON = -97.7431  # Austin, Texas longitude
 
 CHUNK_DURATION = 20  # seconds
 BUFFER_SIZE = 2  # Number of chunks to combine (2 x 20s = 40s)
-SAMPLE_RATE = 44100  # Hz
-CHANNELS = 1
+SAMPLE_RATE = 44100  # Hz - Yeti Mic
+#SAMPLE_RATE = 48000  # Hz - Umi Mic
+CHANNELS = 4
 MAX_RECORDINGS = 5
 
 # Device Index (to be updated after identifying the correct device)
