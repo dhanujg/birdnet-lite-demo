@@ -19,9 +19,9 @@ LEDGER_FILE = os.path.join(OUTPUT_FOLDER, 'ledger.csv')
 LAT = 30.2672  # Austin, Texas latitude
 LON = -97.7431  # Austin, Texas longitude
 
-CHUNK_DURATION = 20  # seconds
+CHUNK_DURATION = 6  # seconds
 BUFFER_SIZE = 2  # Number of chunks to combine (2 x 20s = 40s)
-SAMPLE_RATE = 44100  # Hz - Yeti Mic
+SAMPLE_RATE = 44100  # Hz - Wildtronics Micro Mic
 #SAMPLE_RATE = 48000  # Hz - Umi Mic
 CHANNELS = 4
 MAX_RECORDINGS = 5
@@ -66,7 +66,7 @@ def analyze_recording(analyzer, wav_file, timestamp):
         wav_file,
         lat=LAT,
         lon=LON,
-        date=date_obj,
+        #date=date_obj,
         min_conf=0.25
     )
     recording.analyze()
